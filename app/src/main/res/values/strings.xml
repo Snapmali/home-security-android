@@ -1,0 +1,160 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">HomeSecurity</string>
+
+    <!-- Main Activity -->
+    <string name="alarm">警情</string>
+    <string name="device">设备</string>
+    <string name="options">选项</string>
+    <string name="is_online">在线</string>
+    <string name="is_offline">离线</string>
+    <string name="is_streaming">直播中</string>
+    <string name="is_not_streaming">未直播</string>
+    <string name="is_monitoring">监控中</string>
+    <string name="is_not_monitoring">未监控</string>
+    <string name="motion_alarm">入侵警报</string>
+    <string name="smoke_alarm">烟雾警报</string>
+
+    <string name="time">时间</string>
+    <string name="binding_time">绑定时间</string>
+    <string name="description">描述</string>
+    <string name="alarm_detail">警报详情</string>
+
+    <string name="network_error">无法连接至服务器，请检查网络连接</string>
+    <string name="internal_server_error">服务器错误</string>
+    <string name="request_failure">请求资源失败</string>
+    <string name="blank">BLANK</string>
+    <string name="login_again_needed">需要重新登录</string>
+    <string name="timeout_and_retry">请求超时，请稍后重试</string>
+    <string name="request_successfully_sent">请求已发送成功</string>
+    <string name="device_unbound">设备未与该账号绑定</string>
+    <string name="device_offline">设备不在线</string>
+    <string name="re_login_success">请重试该操作</string>
+
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+
+    <!-- Login Activity Actions -->
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="next_step">下一步</string>
+    <string name="back">返回</string>
+    <string name="verification">验证</string>
+    <string name="resend_code">重新发送验证码</string>
+    <string name="loading">加载中</string>
+
+    <string name="identifier">用户名或电子邮箱</string>
+    <string name="username">用户名</string>
+    <string name="email">电子邮箱</string>
+    <string name="password">密码</string>
+    <string name="password_confirm">确认密码</string>
+    <string name="verification_code">验证码</string>
+
+    <string name="invalid_email">邮箱地址格式错误</string>
+    <string name="invalid_username">4–16位字母、数字或下划线，首位必须为字母</string>
+    <string name="invalid_password">4–16位字母、数字或特殊符号（_.!@#$%^&amp;*）</string>
+    <string name="invalid_verification_code">验证码格式错误</string>
+    <string name="password_inconsistent">两次输入的密码不一致</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_failed">登录失败</string>
+    <string name="wrong_username">用户名或密码错误</string>
+    <string name="wrong_email">邮箱或密码错误</string>
+    <string name="wrong_password">密码错误</string>
+    <string name="wrong_verification_code">验证码错误</string>
+    <string name="user_registered">用户已被注册</string>
+    <string name="username_registered">用户名已被注册</string>
+    <string name="email_registered">邮箱已被注册</string>
+    <string name="register_verification_expired">验证码已过期，请返回重新注册</string>
+    <string name="register_verification_reminder">验证码已发送至您的邮箱</string>
+    <string name="register_verification_expire_reminder">验证码15分钟内有效</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_failed">注册失败</string>
+    <string name="verification_code_sent">验证码已发送</string>
+    <string name="verification_failed">验证失败</string>
+
+    <!-- Device Detail Activity -->
+    <string name="device_detail">设备详情</string>
+    <string name="rename_device">重命名设备</string>
+    <string name="device_screen_name">设备名</string>
+    <string name="invalid_device_screen_name">1–10位字符</string>
+    <string name="rename_device_success">重命名成功</string>
+    <string name="start_monitoring">开始监控</string>
+    <string name="stop_monitoring">停止监控</string>
+    <string name="select_capture_saving_mode">请选择监控录像的保存方式</string>
+    <string name="capture_always_save">监控期间始终录像</string>
+    <string name="capture_save_when_moving">仅当监测到移动物体时录像</string>
+    <string name="watch_streaming">观看监控直播</string>
+    <string name="watch_streaming_summary">仅当设备在线且处于监控状态时可观看直播</string>
+    <string name="unbind_device">解绑设备</string>
+    <string name="unbind_device_summary">将此设备与您的账号解除绑定，此操作无法恢复</string>
+    <string name="unbind_device_confirm">确认解绑？</string>
+    <string name="unbind_device_confirm_summary">此操作无法恢复</string>
+    <string name="unbind_device_success">解绑设备成功</string>
+
+    <!-- Personal Preference Fragment -->
+    <string name="notification">通知</string>
+    <string name="set_notification">应用推送设置</string>
+    <string name="set_notification_summary">点击进入设备的应用设置中进行修改</string>
+    <string name="account">账户</string>
+    <string name="reset_user_password">重设密码</string>
+    <string name="reset_user_password_summary">需提供账户原密码</string>
+    <string name="logout">退出登录</string>
+
+    <!-- Notification -->
+    <string name="device_status">设备状态</string>
+    <string name="device_online_action">设备在线</string>
+    <string name="device_offline_action">设备离线</string>
+    <string name="ongoing_notification">常驻通知</string>
+    <string name="ongoing_notification_content">正在运行</string>
+
+    <!-- Bind Device Activity -->
+    <string name="enable_bluetooth">打开蓝牙</string>
+    <string name="enable_bluetooth_summary">应用需启用蓝牙以发现设备</string>
+    <string name="enable_bluetooth_failed">打开蓝牙失败</string>
+    <string name="bluetooth_disabled">蓝牙未启用</string>
+    <string name="bluetooth_needed">查找设备需要蓝牙支持</string>
+    <string name="add_device">添加设备</string>
+    <string name="bind_device">绑定设备/设备联网</string>
+    <string name="select_device">选择设备</string>
+    <string name="select_device_brief">请选择要绑定的设备</string>
+    <string name="select_device_summary">若设备已被该用户绑定，则仅将设备连接至WLAN，若未绑定将同时绑定设备</string>
+    <string name="refresh">刷新</string>
+    <string name="refresh_failed">刷新失败</string>
+    <string name="bind_again">请重新绑定</string>
+    <string name="select_wlan">选择WLAN</string>
+    <string name="select_wlan_summary">请选择设备连接的WLAN</string>
+    <string name="wifi_disabled">WLAN未启用</string>
+    <string name="wifi_scanning_throttling_summary">您的设备可能会限制应用的WLAN扫描频率</string>
+    <string name="input_wifi_password">请输入WLAN密码</string>
+    <string name="connecting_device">正在连接设备</string>
+    <string name="device_connecting_to_wifi">设备正在连接至WLAN网络</string>
+    <string name="device_connecting_to_server">设备正在连接至服务器</string>
+    <string name="binding_device">正在绑定</string>
+    <string name="press_back_again">再按一次取消绑定</string>
+    <string name="bind_device_success">绑定成功</string>
+    <string name="bind_device_failed">绑定失败</string>
+    <string name="bluetooth_connection_failure">蓝牙连接失败</string>
+    <string name="bluetooth_communication_failure">蓝牙通信失败</string>
+    <string name="device_wifi_connection_failure">设备连接WLAN失败</string>
+    <string name="device_server_connection_failure">设备无法连接至服务器</string>
+    <string name="device_cannot_find_wifi">设备无法找到WLAN</string>
+    <string name="device_has_been_bound">设备已被其他账号绑定</string>
+    <string name="success">操作成功</string>
+
+    <!-- Request Permissions -->
+    <string name="request_location_permission">请求定位权限及后台定位权限</string>
+    <string name="request_location_permission_summary">
+        绑定设备时应用会扫描附近WLAN及蓝牙设备，此操作需要获取系统定位权限及后台定位权限
+    </string>
+    <string name="fine_location_permission_required">需要定位权限</string>
+    <string name="request_fine_location_permission_summary">
+        绑定设备时应用会扫描附近WLAN及蓝牙设备，此操作需要获取系统定位权限
+    </string>
+    <string name="background_location_permission_required">需要后台定位权限</string>
+    <string name="request_background_location_permission_summary">
+        发现设备时应用会扫描附近蓝牙设备，此操作需要获取系统后台定位权限
+    </string>
+    <!-- Reset Password Activity -->
+    <string name="old_password">原密码</string>
+    <string name="new_password">新密码</string>
+
+</resources>

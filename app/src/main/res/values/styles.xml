@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="MyActionBarStyle" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:background">?android:windowBackground</item>
+        <item name="android:backgroundTint">?android:windowBackground</item>
+        <item name="android:backgroundStacked">?android:windowBackground</item>
+    </style>
+
+    <style name="DeviceStatusDefault" parent="@android:style/TextAppearance.Material.Small" />
+
+    <style name="DeviceStatusActivated" parent="@android:style/TextAppearance.Material.Small">
+        <item name="android:textColor">@android:color/holo_blue_light</item>
+    </style>
+
+    <style name="ButtonPrimary" parent="Widget.MaterialComponents.Button">
+        <item name="layout_constraintHorizontal_bias">0.2</item>
+        <item name="backgroundTint">@drawable/highlight_item_color_selector</item>
+        <item name="android:textColor">?android:windowBackground</item>
+    </style>
+
+    <style name="ButtonSecondary" parent="Widget.MaterialComponents.Button">
+        <item name="layout_constraintHorizontal_bias">0.2</item>
+
+        <item name="backgroundTint">?android:windowBackground</item>
+        <item name="rippleColor">?android:windowBackground</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="strokeColor">@drawable/highlight_item_color_selector</item>
+        <item name="android:textColor">@drawable/text_primary_color_selector</item>
+    </style>
+
+    <style name="TranslucentFullScreenActivity" parent="@style/Theme.HomeSecurity">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="PicView" parent="Theme.AppCompat">
+        <item name="android:windowAnimationStyle">@style/noAnimation</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:activityOpenEnterAnimation">@null</item>
+<!--        <item name="android:statusBarColor" tools:targetApi="l">?android:windowBackground</item>-->
+    </style>
+    <style name="noAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+    </style>
+
+</resources>

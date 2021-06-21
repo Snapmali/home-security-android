@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="capture_saving_modes">
+        <item>@string/capture_always_save</item>
+        <item>@string/capture_save_when_moving</item>
+    </string-array>
+</resources>

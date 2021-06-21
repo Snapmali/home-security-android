@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="window_background">#FFFAFAFA</color>
+    <color name="window_background_night">#FF1C1C1C</color>
+    <color name="selected">#FF883DF2</color>
+    <color name="selected_night">#FF643E95</color>
+    <color name="primary_disabled">#FFC49FF8</color>
+    <color name="primary_disabled_night">#422F5D</color>
+    <color name="text_primary_disabled">#42000000</color>
+    <color name="text_primary_disabled_night">#4CFFFFFF</color>
+
+    <color name="activated">@android:color/holo_blue_light</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="transparent">#00000000</color>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/deviceDetailFragmentContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.devicedetail.DeviceDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorSurface"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/deviceDetailNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:drawablePadding="4dp"
+                android:gravity="bottom"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                app:drawableEndCompat="@drawable/ic_baseline_edit_24"
+                tools:text="设备名称 Device Name" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/deviceDetailTimeTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/binding_time" />
+
+                <TextView
+                    android:id="@+id/deviceDetailTimeText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    tools:text="2021/04/12 19:21" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/deviceDetailIsOnlineText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    tools:drawableStartCompat="@drawable/ic_baseline_wifi_off_24"
+                    tools:text="@string/is_offline"
+                    tools:textAppearance="@style/DeviceStatusDefault" />
+
+                <TextView
+                    android:id="@+id/deviceDetailIsMonitoringText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|center_vertical"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/ic_baseline_security_24"
+                    tools:text="@string/is_monitoring"
+                    tools:textAppearance="@style/DeviceStatusActivated" />
+
+                <TextView
+                    android:id="@+id/deviceDetailIsStreamingText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|center_vertical"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/ic_baseline_cast_connected_24"
+                    tools:text="@string/is_streaming"
+                    tools:textAppearance="@style/DeviceStatusActivated" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/deviceDetailMonitorButton"
+                style="@style/ButtonSecondary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                tools:text="@string/start_monitoring" />
+
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/deviceDetailTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/deviceDetailAlarmTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alarm" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/deviceDetailSettingTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/options" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/deviceDetailViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

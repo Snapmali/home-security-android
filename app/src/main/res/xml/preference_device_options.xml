@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Preference
+        android:key="start_streaming"
+        android:title="@string/watch_streaming"
+        android:summary="@string/watch_streaming_summary"
+        app:icon="@drawable/ic_baseline_cast_24" />
+
+    <Preference
+        android:key="unbind_device"
+        android:title="@string/unbind_device"
+        android:summary="@string/unbind_device_summary"
+        app:icon="@drawable/ic_baseline_remove_circle_outline_24" />
+
+</PreferenceScreen>

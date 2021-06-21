@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <PreferenceCategory android:title="@string/notification">
+
+        <Preference
+            android:key="set_notification"
+            android:title="@string/set_notification"
+            android:summary="@string/set_notification_summary"
+            app:icon="@drawable/ic_baseline_notifications_24" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/account">
+
+        <Preference
+            android:key="reset_password"
+            android:summary="@string/reset_user_password_summary"
+            android:title="@string/reset_user_password"
+            app:icon="@drawable/ic_baseline_vpn_key_24" />
+
+        <Preference
+            android:key="logout"
+            android:title="@string/logout"
+            app:icon="@drawable/ic_baseline_logout_24" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
